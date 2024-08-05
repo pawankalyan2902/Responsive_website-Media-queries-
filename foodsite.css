@@ -1,0 +1,183 @@
+body {
+    font-family: "Quick sand", sans-serif;
+    background-color: rgb(44, 41, 38);
+    color: rgb(238, 164, 80);
+}
+
+ul li {
+    list-style: none;
+}
+span.material-symbols-outlined
+{
+ display: none;
+}
+/* aside */
+#drawer 
+{
+   background-color:  rgba(0, 0, 0, 0.7);
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   padding-right: 0%;
+   padding-left: 0%;
+   display: none;
+   transition: background-color 2s ease-out;
+}
+#drawer ul{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 30px auto;
+      padding-left:  0px;
+}
+#drawer_container a{
+    text-decoration: none;
+    font-size:2rem ;
+    color: aliceblue;
+    text-align: center;
+}
+#drawer:hover
+{
+   background-color:rgba(29, 26, 24);;
+}
+#drawer_container li{
+    padding-bottom: 10px;
+}
+#drawer:target{
+    display: block;
+}
+#btn 
+{
+    list-style: none;
+    text-align: end;
+}
+ul
+{
+    display: flex;
+}
+#btn a{
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 50px;
+    margin-top: 16px;
+}
+/* aside  ends */
+
+
+header li {
+    list-style: none;
+    font-weight: 300;
+}
+
+ul.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(29, 26, 24);
+}
+
+ nav {
+    display: flex;
+    flex-direction: row;
+    width: 12.5rem;
+    padding-right: 1.2rem;
+    justify-content:space-between;
+    padding-right:50px;
+    
+}
+
+header a {
+    color: rgb(238, 164, 80);
+    text-decoration: none;
+
+}
+
+li.logo {
+    text-shadow: 1px 1px 1px black;
+}
+
+/* main */
+#section ul {
+    padding-left: 0px;
+    gap: 0px 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+
+}
+
+h1.main_header {
+    text-align: center;
+    padding-top: 0.6rem;
+    padding-bottom: 2rem;
+}
+
+.container img {
+    height: 9.3rem;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0%;
+}
+
+#section a {
+    color: aliceblue;
+    background-color: rgb(238, 164, 80);
+    text-decoration: none;
+    padding: 0.3rem;
+    border-radius: 3px;
+}
+
+#section a:hover {
+    background-color: rgba(22, 123, 182, 0.757);
+}
+
+
+
+.content_tag {
+    text-align: center;
+    padding-bottom: 1.2rem;
+    background-color: rgba(0, 255, 247, 0.461);
+    padding-top: 10px;
+}
+article{
+    overflow: hidden;
+    border-radius: 5px;
+  
+}
+#section
+{
+    width: 50%;
+    margin: auto;
+}
+@media (max-width: 48rem){
+#section ul{
+        grid-template-columns: 1fr;
+        gap:8px;
+
+    }
+    h1.main_header
+    {
+        font-size: 1.5rem;
+    }
+    nav{
+       display: none;
+   
+    }
+     span.material-symbols-outlined
+    {
+        display: block;
+        font-size: 50px;
+    }
+}
+/* transformation  css */
+li.container:hover
+{
+  transform:scale(1.2);
+}
+/* to slow down or to time we use transformation */
+li.container{
+    transition: transform 0.5s ease-out;
+}
+
